@@ -202,12 +202,6 @@ namespace KinectCam
 
                 colorMappedToDepthPoints = new DepthSpacePoint[colorWidth * colorHeight];
 
-                bitmap = new WriteableBitmap(colorWidth, colorHeight, 96.0, 96.0, PixelFormats.Bgra32, null);
-
-                // Calculate the WriteableBitmap back buffer size
-                bitmapBackBufferSize = (uint)((bitmap.BackBufferStride * (bitmap.PixelHeight - 1)) + (bitmap.PixelWidth * bytesPerPixel));
-
-
                 sensor.Open();
 
 				Sensor = sensor;
@@ -520,6 +514,11 @@ namespace KinectCam
 
         private static void Reader_MultiSourceFrameArrived(object sender, MultiSourceFrameArrivedEventArgs e)
         {
+            bitmap = new WriteableBitmap(colorWidth, colorHeight, 96.0, 96.0, PixelFormats.Bgra32, null);
+
+            // Calculate the WriteableBitmap back buffer size
+            bitmapBackBufferSize = (uint)((bitmap.BackBufferStride * (bitmap.PixelHeight - 1)) + (bitmap.PixelWidth * bytesPerPixel));
+
             int depthWidth = 0;
             int depthHeight = 0;
 
