@@ -1,0 +1,6 @@
+D:\KinectCamV21\BaseClassesNET.dll.config
+D:\KinectCamV21\BaseClassesNET.dll
+D:\KinectCamV21\BaseClassesNET.pdb
+D:\GitHub\KinectCamV2\Sources\BaseClasses\obj\Debug\BaseClasses.csprojResolveAssemblyReference.cache
+D:\GitHub\KinectCamV2\Sources\BaseClasses\obj\Debug\BaseClassesNET.dll
+D:\GitHub\KinectCamV2\Sources\BaseClasses\obj\Debug\BaseClassesNET.pdb

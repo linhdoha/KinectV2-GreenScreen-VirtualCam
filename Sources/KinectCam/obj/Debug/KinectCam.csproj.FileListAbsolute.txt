@@ -1,0 +1,11 @@
+D:\KinectCamV21\install.bat
+D:\KinectCamV21\uninstall.bat
+D:\KinectCamV21\KinectCam.dll.config
+D:\KinectCamV21\KinectCam.dll
+D:\KinectCamV21\KinectCam.pdb
+D:\GitHub\KinectCamV2\Sources\KinectCam\obj\Debug\KinectCam.csprojResolveAssemblyReference.cache
+D:\GitHub\KinectCamV2\Sources\KinectCam\obj\Debug\KinectCam.AboutForm.resources
+D:\GitHub\KinectCamV2\Sources\KinectCam\obj\Debug\KinectCam.Properties.Resources.resources
+D:\GitHub\KinectCamV2\Sources\KinectCam\obj\Debug\KinectCam.csproj.GenerateResource.Cache
+D:\GitHub\KinectCamV2\Sources\KinectCam\obj\Debug\KinectCam.dll
+D:\GitHub\KinectCamV2\Sources\KinectCam\obj\Debug\KinectCam.pdb
