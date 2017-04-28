@@ -8,8 +8,8 @@
     <ProjectGuid>{02D8455F-DDC1-4BC0-B85C-246CF8FD2A36}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KinectCam</RootNamespace>
-    <AssemblyName>KinectCam</AssemblyName>
+    <RootNamespace>KinectV2GreenScreen</RootNamespace>
+    <AssemblyName>KinectV2GreenScreen</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <StartupObject>
@@ -43,7 +43,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\..\..\..\..\KinectCamV21\</OutputPath>
+    <OutputPath>..\..\..\..\KinectV2GreenScreen\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>

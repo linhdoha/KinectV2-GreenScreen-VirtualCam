@@ -195,7 +195,7 @@ namespace KinectCam
                 int depthWidth = depthFrameDescription.Width;
                 int depthHeight = depthFrameDescription.Height;
 
-                FrameDescription colorFrameDescription = sensor.ColorFrameSource.FrameDescription;
+                /*FrameDescription colorFrameDescription = sensor.ColorFrameSource.FrameDescription;
 
                 int colorWidth = colorFrameDescription.Width;
                 int colorHeight = colorFrameDescription.Height;
@@ -205,7 +205,7 @@ namespace KinectCam
                 bitmap = new WriteableBitmap(colorWidth, colorHeight, 96.0, 96.0, PixelFormats.Bgra32, null);
 
                 // Calculate the WriteableBitmap back buffer size
-                bitmapBackBufferSize = (uint)((bitmap.BackBufferStride * (bitmap.PixelHeight - 1)) + (bitmap.PixelWidth * bytesPerPixel));
+                bitmapBackBufferSize = (uint)((bitmap.BackBufferStride * (bitmap.PixelHeight - 1)) + (bitmap.PixelWidth * bytesPerPixel));*/
 
 
                 sensor.Open();
@@ -390,7 +390,7 @@ namespace KinectCam
 		public static int ZoomedPointerStart = ZoomedHeightStart * 1920 * 4 + ZoomedWidthStart * 4;
 		public static int ZoomedPointerEnd = ZoomedHeightEnd * 1920 * 4 + ZoomedWidthEnd * 4;
 		static readonly byte[] sensorColorFrameData = new byte[1920 * 1080 * 4];
-        static readonly byte[] greenScreenFrameData = new byte[1920 * 1080 * 4];
+        static byte[] greenScreenFrameData = new byte[1920 * 1080 * 4];
 
 
         public unsafe static void GenerateFrame(IntPtr _ptr, int length, bool mirrored, bool zoom)
@@ -551,6 +551,35 @@ namespace KinectCam
                     return;
                 }
 
+
+
+
+
+
+
+
+
+                FrameDescription colorFrameDescription = Sensor.ColorFrameSource.FrameDescription;
+
+                int colorWidth = colorFrameDescription.Width;
+                int colorHeight = colorFrameDescription.Height;
+
+                colorMappedToDepthPoints = new DepthSpacePoint[colorWidth * colorHeight];
+
+                bitmap = new WriteableBitmap(colorWidth, colorHeight, 96.0, 96.0, PixelFormats.Bgra32, null);
+
+                // Calculate the WriteableBitmap back buffer size
+                bitmapBackBufferSize = (uint)((bitmap.BackBufferStride * (bitmap.PixelHeight - 1)) + (bitmap.PixelWidth * bytesPerPixel));
+
+
+
+
+
+
+
+
+
+
                 // Process Depth
                 FrameDescription depthFrameDescription = depthFrame.FrameDescription;
 
@@ -572,12 +601,11 @@ namespace KinectCam
 
                 // Process Color
 
-                Trace.WriteLine("\n\n\n\n BEFORE LOCK  \n\n\n\n");
-
+                
+                
                 // Lock the bitmap for writing
                 bitmap.Lock();
-
-                Trace.WriteLine("\n\n\n\n LOCK!!!!  \n\n\n\n");
+                isBitmapLocked = true;
 
                 colorFrame.CopyConvertedFrameDataToIntPtr(bitmap.BackBuffer, bitmapBackBufferSize, ColorImageFormat.Bgra);
 
@@ -627,7 +655,7 @@ namespace KinectCam
                                     }
                                 }
 
-                                bitmapPixelsPointer[colorIndex] = 0;
+                                bitmapPixelsPointer[colorIndex] = 0x0000FF00;
                             }
                         }
 
@@ -652,7 +680,7 @@ namespace KinectCam
 
                     bitmap.CopyPixels(bitmapData, stride, 0);
 
-                    //greenScreenFrameData
+                    greenScreenFrameData = bitmapData;
 
 
                 }

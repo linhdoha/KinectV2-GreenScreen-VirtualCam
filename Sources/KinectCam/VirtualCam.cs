@@ -581,7 +581,7 @@ namespace KinectCam
     
 
     [ComVisible(true)]
-    [Guid("E48ECF1A-A5E7-4EB0-8BF7-E15185D66FA4")]
+    [Guid("b64eb74d-5537-4520-8f69-f52c3eab0532")]
     [AMovieSetup(Merit.Normal,AMovieSetup.CLSID_VideoInputDeviceCategory)]
     [PropPageSetup(typeof(AboutForm))]
     public class VirtualCamFilter : BaseSourceFilter, IAMFilterMiscFlags
@@ -624,7 +624,7 @@ namespace KinectCam
         #region Constructor
 
         public VirtualCamFilter()
-            : base("Kinect Camera V2")
+            : base("KinectV2 GreenScreen")
         {
             m_bmi.bmiHeader = new BitmapInfoHeader();
             AddPin(new VirtualCamStream("Capture", this));
