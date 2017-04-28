@@ -1,0 +1,11 @@
+D:\KinectV2GreenScreen\install.bat
+D:\KinectV2GreenScreen\uninstall.bat
+D:\KinectV2GreenScreen\KinectV2GreenScreen.dll.config
+D:\KinectV2GreenScreen\KinectV2GreenScreen.dll
+D:\KinectV2GreenScreen\KinectV2GreenScreen.pdb
+D:\GitHub\KinectV2-GreenScreen-VirtualCam\Sources\KinectCam\obj\Debug\KinectV2 GreenScreen.csprojResolveAssemblyReference.cache
+D:\GitHub\KinectV2-GreenScreen-VirtualCam\Sources\KinectCam\obj\Debug\KinectCam.AboutForm.resources
+D:\GitHub\KinectV2-GreenScreen-VirtualCam\Sources\KinectCam\obj\Debug\KinectV2GreenScreen.Properties.Resources.resources
+D:\GitHub\KinectV2-GreenScreen-VirtualCam\Sources\KinectCam\obj\Debug\KinectV2 GreenScreen.csproj.GenerateResource.Cache
+D:\GitHub\KinectV2-GreenScreen-VirtualCam\Sources\KinectCam\obj\Debug\KinectV2GreenScreen.dll
+D:\GitHub\KinectV2-GreenScreen-VirtualCam\Sources\KinectCam\obj\Debug\KinectV2GreenScreen.pdb

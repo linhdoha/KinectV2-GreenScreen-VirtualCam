@@ -4,3 +4,9 @@ D:\KinectCamV21\BaseClassesNET.pdb
 D:\GitHub\KinectCamV2\Sources\BaseClasses\obj\Debug\BaseClasses.csprojResolveAssemblyReference.cache
 D:\GitHub\KinectCamV2\Sources\BaseClasses\obj\Debug\BaseClassesNET.dll
 D:\GitHub\KinectCamV2\Sources\BaseClasses\obj\Debug\BaseClassesNET.pdb
+D:\KinectV2GreenScreen\BaseClassesNET.dll.config
+D:\KinectV2GreenScreen\BaseClassesNET.dll
+D:\KinectV2GreenScreen\BaseClassesNET.pdb
+D:\GitHub\KinectV2-GreenScreen-VirtualCam\Sources\BaseClasses\obj\Debug\BaseClasses.csprojResolveAssemblyReference.cache
+D:\GitHub\KinectV2-GreenScreen-VirtualCam\Sources\BaseClasses\obj\Debug\BaseClassesNET.dll
+D:\GitHub\KinectV2-GreenScreen-VirtualCam\Sources\BaseClasses\obj\Debug\BaseClassesNET.pdb
